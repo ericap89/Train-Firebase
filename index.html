@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+           <!--Jumbotron-->
+    
+           <div class="container mb-5">
+            <h1 class="jumbotron text-center">Train Activity</h1>
+        
+        <!--contact form-->
+    <div class="wrapper">
+        <div class="contact">
+            <div class="container mt-2 mb-2">
+
+                <form id="trainForm">
+                    <div class="form-group">
+                        <label for="name">Train Name</label>
+                        <input class="form-control" type="text" id="name" placeholder="Enter Train Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Destination</label>
+                        <input class="form-control" type="text" id="destination" placeholder="Enter Destination" required>
+                    </div>
+                    <div class="form-group">
+                        <label>First Train Time (HH:mm - Military Time)</label>
+                        <input class="form-control" type="text" id="train">
+                    </div>
+                    <div class="form-group">
+                        <label>Frequency (min) </label>
+                        <input class="form-control" type="text" id="frequency" >
+                    </div>
+                    
+                    <!--Submit button-->
+                    <div class="form-group">
+                            <button class="btn btn-light" type="submit">Submit</button>
+                    </div>
+                </form>    
+            </div>
+        </div>
+    </div>
+
+    <div class="table">
+        <div class="container">
+            <table class="schedule"></table>
+        </div>
+    </div>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
